@@ -1,0 +1,6 @@
+sheet_info:
+  sheet_link: "https://docs.google.com/spreadsheets/d/1G5SA8CPvIPpM8ZmT7e95SVAodebPyKn-_q1H8FZz0Zs/edit?gid=2082129286#gid=2082129286"
+  subsheet_name: "Sheet2"
+  credential_json: "credentials.json"
+
+chrome-driver-version: 139

@@ -1,0 +1,7 @@
+fake_useragent==2.1.0
+python-dotenv==1.1.1
+selenium==4.35.0
+undetected_chromedriver==3.5.5
+webdriver_manager==4.0.2
+
+-e .
