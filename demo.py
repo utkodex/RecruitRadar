@@ -10,15 +10,15 @@
 # --------------------------------------------------------------------------------
 
 # # below code is to check the exception config
-from logger import logging
-from exception import MyException
-import sys
+# from logger import logging
+# from exception import MyException
+# import sys
 
-try:
-    a = 1+'Z'
-except Exception as e:
-    logging.info(e)
-    raise MyException(e, sys) from e
+# try:
+#     a = 1+'Z'
+# except Exception as e:
+#     logging.info(e)
+#     raise MyException(e, sys) from e
 
 # --------------------------------------------------------------------------------
 
