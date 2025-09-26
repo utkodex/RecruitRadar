@@ -19,21 +19,15 @@ from exception import SeleniumBotException
 import sys
 from logger import logging
 
-import run_browser
 
-class LinkedinSearch:
-    
-    def __init__(self, driver, keywords):
-        self.driver = driver
-        self.keywords = keywords
+class SelectFilters:
 
-    def searching(self):
+    def filters_selection(driver, button):
+
         try:
-            search = WebDriverWait(self.driver, 60).until(EC.presence_of_element_located((By.XPATH,"//input[@placeholder='Search']")))
-            search.send_keys(self.keywords)
-            logging.info(f"Searching {self.keywords}...")
-            search.send_keys(Keys.RETURN)
-            logging.info(f"Press Enter")
+            jobs_button = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, f"//button[normalize-space()='{button}']")))
+            jobs_button.click()
+            logging.info(f"{button} filter applied...")
 
         except (
                 TimeoutException,
